@@ -1,0 +1,16 @@
+<div class="dashboard">
+  <button (click)="play()"> <fa-icon [icon]="playIcon()"></fa-icon> {{isPlaying() ? "Pause" : "Resume"}} </button>
+  <button (click)="next()" [disabled]="isPlaying()"><fa-icon [icon]="faStepForward"></fa-icon> Step </button>
+  <button (click)="restart()"> <fa-icon [icon]="faRedo"></fa-icon> Restart </button>
+  Tick Speed: <select (change)="onSpeedChange($event)">
+    <option value="1000">1 Sec</option>
+    <option value="500">.5 Sec</option>
+    <option value="250">.25 Sec</option>
+    <option value="100">.1 Sec</option>
+  </select>
+  Board Size: <select (change)="onSizeChange($event)">
+    <option value="10">10 x 10</option>
+    <option value="20">20 x 20</option>
+    <option value="40">40 x 40</option>
+  </select>
+</div>

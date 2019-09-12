@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="generation">Generation: <p class="green">{{this.golService.game.generation}}</p></div>
+  <table>
+    <tbody>
+      <tr *ngFor="let r of gameObject.board; let i = index">
+        <td *ngFor="let c of r; let j = index"><span [ngClass]="setClass(c)" (click)="onClick(i,j)"></span></td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>

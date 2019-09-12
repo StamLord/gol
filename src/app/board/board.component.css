@@ -1,0 +1,38 @@
+.container{
+}
+
+.generation {
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 150px;
+  background-color: #474B4f;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.green {
+  display:inline;
+  color: #86C232;
+  background-color: #474B4f;
+}
+
+table {
+  margin: auto;
+  padding: 10px;
+  border: solid #474b4f 3px;
+  border-radius: 20px;
+}
+
+.cell {
+  height: 15px;
+  width: 15px;
+  background-color: #474B4F;
+  border-radius: 10%;
+  display: inline-block;
+}
+
+.alive {
+  background-color: #86C232;
+}

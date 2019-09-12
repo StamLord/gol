@@ -1,0 +1,18 @@
+<div class="window">
+  <div class="tabs">
+    <ul>
+      <li>
+        <a href="#" (click)="changeIndex(0)">Still lifes</a>
+      </li>
+      <li>
+        <a href="#" (click)="changeIndex(1)">Oscillators</a>
+      </li>
+      <li>
+        <a href="#" (click)="changeIndex(2)">Spaceships</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container" [innerHTML]="info[index]">
+    
+  </div>
+</div>

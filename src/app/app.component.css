@@ -1,0 +1,6 @@
+.grid{
+  display:grid;
+  margin:auto;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70%;
+}
